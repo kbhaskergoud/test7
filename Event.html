@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mouse Events Example</title>
+</head>
+<body>
+
+<button id="myButton">Click Me</button>
+<p id="message"></p>
+
+<script>
+  const button = document.getElementById("myButton");
+  const msg = document.getElementById("message");
+
+  button.addEventListener("click", function() {
+    msg.textContent = "Button clicked!";
+  });
+
+  button.addEventListener("mouseover", function() {
+    msg.textContent = "Mouse is over the button.";
+  });
+
+  button.addEventListener("mouseout", function() {
+    msg.textContent = "Mouse left the button.";
+  });
+</script>
+
+</body>
+</html>
